@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoring Tool</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Tutoring Tool</h1>
+    </header>
+    <main>
+      <section id="login">
+
+        <h2>Login</h2>
+        <form id="login-form">
+          <!-- Login form fields (username, password) here -->
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">Login</button>
+          <button type="button" id="show-register">Register</button>
+        </form>
+      </section>
+
+      <section id="register" style="display: none;">
+        <h2>Register</h2>
+        <form id="register-form">
+          <!-- Registration form fields here -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="choice">Choose Your Field:</label>
+          <select id="choice" name="choice" required>
+            <option value="technical">Technical</option>
+            <option value="non-technical">Non-Technical</option>
+            <option value="medical">Medical</option>
+          </select>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="new-username">Username:</label>
+          <input type="text" id="new-username" name="new-username" required />
+
+          <label for="contact-number">Contact Number:</label>
+          <input type="tel" id="contact-number" name="contact-number"
+            required />
+
+          <label for="branch">Branch:</label>
+          <input type="text" id="branch" name="branch" required />
+
+          <label for="year">Year:</label>
+          <input type="text" id="year" name="year" required />
+
+          <label for="new-password">Set Password:</label>
+          <input type="password" id="new-password" name="new-password"
+            required />
+
+        </form>
+      </section>
+
+      <section id="student-dashboard">
+        <h2>Welcome to Your Student Dashboard</h2>
+        <p>Hello, [Student Name]! Here, you can check your progress, upcoming
+          sessions, and more.</p>
+
+        <!-- Display student information, progress, and upcoming sessions -->
+
+        <div class="progress">
+          <h3>Your Progress</h3>
+          <!-- Add progress information here -->
+        </div>
+
+        <div class="upcoming-sessions">
+          <h3>Upcoming Sessions</h3>
+          <!-- List upcoming sessions here -->
+        </div>
+      </section>
+      <section id="topic-selection">
+        <h2>Select a Topic</h2>
+        <p>Choose a topic you'd like to study or get help with:</p>
+
+        <!-- Add topic selection options here (e.g., buttons, checkboxes, etc.) -->
+
+        <div>
+          <input type="checkbox" id="math-checkbox" name="topic" value="math">
+          <label for="math-checkbox">Math</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="science-checkbox" name="topic"
+            value="science">
+          <label for="science-checkbox">Science</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="history-checkbox" name="topic"
+            value="history">
+          <label for="history-checkbox">History</label>
+        </div>
+      </section>
+
+      <section id="teacher-list">
+        <h2>List of Teachers</h2>
+        <p>Here are some teachers available to help you with your selected
+          topic:</p>
+
+        <!-- Display a list of teachers with their names and expertise -->
+
+        <ul>
+          <li>
+            <h3>Teacher 1</h3>
+            <br>
+            <p>Mathematics</p>
+            <button>View Profile</button>
+          </li>
+          <li>
+            <h3>Teacher 2</h3>
+            <br>
+            <p>Science</p>
+            <button>View Profile</button>
+          </li>
+          <!-- Add more teacher listings as needed -->
+        </ul>
+      </section>
+
+      <section id="teacher-profile">
+        <h2>Teacher Profile</h2>
+
+        <!-- Display detailed information about the selected teacher -->
+
+        <h3>Teacher Name</h3>
+        <br>
+
+        <p>Expertise: Mathematics</p>
+        <p>Experience: [Years of experience]</p>
+        <p>Education: [Educational background]</p>
+
+        <!-- Add more details as needed -->
+
+        <button>Connect E-mail</button>
+      </section>
+
+      <section id="schedule-session">
+        <h2>Schedule a Session</h2>
+        <p>Select a date and time for your tutoring session:</p>
+
+        <label for="session-date">Date:</label>
+        <input type="date" id="session-date" name="session-date" required>
+
+        <label for="session-time">Time:</label>
+        <input type="time" id="session-time" name="session-time" required>
+
+        <button>Schedule Session</button>
+      </section>
+
+    </main>
+    <footer>
+      <p>&copy; 2023 Tutoring Tool</p>
+    </footer>
+    <script src="http://localhost:3000"></script>
+
+  </body>
+</html>

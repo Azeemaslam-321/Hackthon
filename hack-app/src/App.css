@@ -1,0 +1,163 @@
+/* App.css */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Login and Registration Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Student Dashboard Styles */
+.progress,
+.upcoming-sessions {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Topic Selection Styles */
+button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+/* Teacher List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button.view-profile {
+  background-color: #e74c3c;
+}
+
+button.view-profile:hover {
+  background-color: #c0392b;
+}
+
+/* Teacher Profile Styles */
+.teacher-profile {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+/* Schedule Session Styles */
+label,
+input[type="date"],
+input[type="time"] {
+  margin: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  select {
+    width: 100%;
+  }
+}
+/* Add this CSS to your styles.css file or in a <style> block in your HTML */
+
+/* Style the checkbox container div */
+#topic-selection div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Style the checkboxes */
+#topic-selection input[type="checkbox"] {
+  margin-right: 10px; /* Add some space between the checkbox and label */
+  appearance: none; /* Remove the default browser styles */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3498db; /* Border color for unchecked state */
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Style the label text for the checkboxes */
+#topic-selection label {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style the checkbox when checked */
+#topic-selection input[type="checkbox"]:checked {
+  background-color: #3498db; /* Background color for checked state */
+  border-color: #3498db; /* Border color for checked state */
+  color: white; /* Text color for checked state */
+}
